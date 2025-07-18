@@ -1,10 +1,13 @@
 {
   "name": "appstore-preview",
   "version": "1.0.0",
+  "homepage": "https://doszero.github.io/App-Store-Listing-Preview-Tool",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.0.0",
@@ -15,6 +18,8 @@
     "autoprefixer": "^10.0.0",
     "postcss": "^8.0.0",
     "tailwindcss": "^3.0.0",
-    "vite": "^4.0.0"
+    "vite": "^4.0.0",
+    "gh-pages": "^6.0.0",
+    "html2canvas": "^1.4.1"
   }
 }
